@@ -266,7 +266,7 @@ function BookingForm({ onBookingCreated }) {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              placeholder="9-10 digits"
+              placeholder="10-12 digits"
             />
           </label>
 
