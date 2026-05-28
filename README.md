@@ -25,10 +25,10 @@ The map feature uses OpenStreetMap tiles displayed through Leaflet and React Lea
 
 ## 3. How to Run and Build the Project Locally
 ### Install:
-'npm install'
+`npm install`
 
 ### Run the development server:
-'npm run dev'
+`npm run dev`
 
 ## 4. Microservice API Endpoints Used
 This project uses local mock API functions instead of a real remote backend server.
