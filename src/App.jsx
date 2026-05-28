@@ -26,11 +26,11 @@ function App() {
       <header className="hero">
         <div>
           <p className="eyebrow">CabsOnline Part 2</p>
-          <h1>CabsOnline Plus</h1>
+          <h1>CabsOnline Premium</h1>
           <p>
             A React-based extension of the original PHP taxi booking system,
             including customer tracking, driver workflow, admin assignment, and
-            fare estimation.
+            fare estimation. :)
           </p>
         </div>
       </header>
@@ -64,12 +64,7 @@ function App() {
           Admin
         </button>
 
-        <button
-          className={activeTab === "route" ? "active" : ""}
-          onClick={() => setActiveTab("route")}
-        >
-          Route Preview
-        </button>
+        
       </nav>
 
       <main>

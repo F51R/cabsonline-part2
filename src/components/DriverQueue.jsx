@@ -6,7 +6,7 @@ function DriverQueue({ bookings, refreshBookings }) {
   );
 
   function handleAccept(reference) {
-    assignDriver(reference, "D001 - Alex Driver");
+    assignDriver(reference, "D001 - James Charles");
     refreshBookings();
   }
 

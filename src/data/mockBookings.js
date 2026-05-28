@@ -21,7 +21,7 @@ const initialBookings = [
     pickupDate: "2026-05-28",
     pickupTime: "16:15",
     status: "assigned",
-    driver: "D001 - Alex Driver",
+    driver: "D001 - James Charles",
     fare: 34.0,
     paymentStatus: "paid"
   }

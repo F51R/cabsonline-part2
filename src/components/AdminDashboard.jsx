@@ -2,13 +2,13 @@ import { useState } from "react";
 import { assignDriver, unassignDriver } from "../data/mockBookings";
 
 function AdminDashboard({ bookings, refreshBookings }) {
-    const [selectedDriver, setSelectedDriver] = useState("D001 - Alex Driver");
+    const [selectedDriver, setSelectedDriver] = useState("D001 - James Charles");
     const [message, setMessage] = useState("");
 
     const drivers = [
-        "D001 - Alex Driver",
-        "D002 - Liam Brown",
-        "D003 - Emma Wilson"
+        "D001 - James Charles",
+        "D002 - Chris Brown",
+        "D003 - Aespa"
     ];
 
     function handleAssign(reference) {
