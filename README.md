@@ -24,11 +24,11 @@ Map provider:
 The map feature uses OpenStreetMap tiles displayed through Leaflet and React Leaflet.
 
 ## 3. How to Run and Build the Project Locally
-Install:
-npm install
+### Install:
+'npm install'
 
-Run the development server:
-npm run dev
+### Run the development server:
+'npm run dev'
 
 ## 4. Microservice API Endpoints Used
 This project uses local mock API functions instead of a real remote backend server.
@@ -53,7 +53,7 @@ Local mock API functions:
 There are no remote API endpoints used in this prototype.
 
 ## 5. Feature Descriptions
-Feature 1: Smart Booking with Map Selection
+### Feature 1: Smart Booking with Map Selection
 The booking page allows customers to create a taxi booking. Instead of typing pickup and destination suburbs manually, the customer can select the pickup location and destination location directly from the interactive map.
 
 The map allows the user to switch between selecting a pickup point and selecting a destination point. When both points are selected, markers are shown on the map and a route line is displayed between them.
@@ -62,21 +62,21 @@ The booking form also includes customer name, phone number, pickup date, pickup 
 
 The system validates the booking before submission. It checks that required fields are completed, the phone number is valid, the pickup time is not in the past, and both map locations have been selected.
 
-Feature 2: Fare and Distance Estimate
+### Feature 2: Fare and Distance Estimate
 After the user selects pickup and destination locations on the map, the system calculates an estimated distance using the selected coordinates.
 
 The system then calculates an estimated fare using a simple fare formula. This gives the customer a basic estimate before submitting the booking.
 
 This feature improves the original Part 1 system because Part 1 only allowed text-based booking details. Part 2 provides a more modern and interactive booking experience.
 
-Feature 3: Customer Tracking
+### Feature 3: Customer Tracking
 The tracking page allows customers to search for their booking using a booking reference number such as BRN00001.
 
 After searching, the system displays booking details, including customer name, route information, pickup date and time, booking status, assigned driver, estimated fare, and payment status.
 
 This feature extends the original system by giving customers a monitoring service after they create a booking.
 
-Feature 4: Driver Job Queue
+### Feature 4: Driver Job Queue
 The driver page allows drivers to view active taxi jobs.
 
 Drivers can accept unassigned bookings. After a driver accepts a booking, the booking status changes to assigned.
@@ -85,7 +85,7 @@ Drivers can also mark assigned bookings as completed. When a ride is completed, 
 
 This feature extends the original system by adding driver-side functionality.
 
-Feature 5: Admin Dashboard
+### Feature 5: Admin Dashboard
 The admin dashboard allows admin staff to view all bookings in a table.
 
 Admin staff can select a driver and assign that driver to an unassigned booking. The system updates the booking status and displays the assigned driver.
@@ -93,7 +93,7 @@ Admin staff can select a driver and assign that driver to an unassigned booking.
 The dashboard also supports unassigning bookings if needed. This gives admin staff better control over the booking workflow.
 
 ## 6. Testing Instructions
-Test 1: Create a New Booking
+### Test 1: Create a New Booking
 1. Open the application.
 2. Go to the Book tab.
 3. Enter a customer name.
@@ -110,7 +110,7 @@ Test 1: Create a New Booking
 14. Click Submit Booking.
 15. Copy the generated booking reference number.
 
-Test 2: Track a Booking
+### Test 2: Track a Booking
 1. Go to the Track tab.
 2. Enter a booking reference number.
 3. Click Track Booking.
@@ -121,7 +121,7 @@ Example booking references:
 - BRN00002
 - Use any new reference number generated after creating a booking.
 
-Test 3: Assign a Driver as Admin
+### Test 3: Assign a Driver as Admin
 1. Go to the Admin tab.
 2. Select a driver from the driver dropdown.
 3. Find an unassigned booking.
@@ -134,7 +134,7 @@ Sample driver IDs:
 - D002 - Liam Brown
 - D003 - Emma Wilson
 
-Test 4: Driver Accepts or Completes a Job
+### Test 4: Driver Accepts or Completes a Job
 1. Go to the Driver tab.
 2. Find an unassigned or assigned booking.
 3. If the booking is unassigned, click Accept as D001.
@@ -142,7 +142,7 @@ Test 4: Driver Accepts or Completes a Job
 5. If the booking is assigned, click Complete Ride.
 6. Check that the booking status changes to completed.
 
-Test 5: Validate Error Handling
+### Test 5: Validate Error Handling
 1. Try submitting a booking without selecting a pickup location.
 2. Try submitting a booking without selecting a destination location.
 3. Try entering an invalid phone number.
@@ -158,7 +158,7 @@ The route line on the map is a simple straight line between the pickup and desti
 
 Payment processing is simulated. The system does not connect to a real payment provider.
 
-##8. Reflection on AI-Supported Development Process
+## 8. Reflection on AI-Supported Development Process
 AI was used to support the development of this Part 2 project. The original Part 1 system was based on PHP, MySQL, JavaScript, and HTML. For Part 2, AI helped plan how to refactor and extend the taxi booking system into a modern React application.
 
 AI also helped generate and improve React components, including the booking form, tracking page, driver queue, admin dashboard, and map selection feature. During development, the generated code was reviewed and tested. Some parts were adjusted to better match the assignment requirements and to fix issues such as map display problems and CSS layout problems.
