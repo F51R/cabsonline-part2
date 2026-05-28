@@ -1,9 +1,9 @@
-#CabsOnline Plus - Part 2 README
+# CabsOnline Plus - Part 2 README
 
-##1. Public URL of the Deployed Application
+## 1. Public URL of the Deployed Application
 Public URL: https://github.com/F51R/cabsonline-part2.git
 
-##2. Technology Stack Used
+## 2. Technology Stack Used
 This project was developed using a modern React-based front-end stack.
 
 Main technology stack:
@@ -23,14 +23,14 @@ Main libraries:
 Map provider:
 The map feature uses OpenStreetMap tiles displayed through Leaflet and React Leaflet.
 
-##3. How to Run and Build the Project Locally
+## 3. How to Run and Build the Project Locally
 Install:
 npm install
 
 Run the development server:
 npm run dev
 
-##4. Microservice API Endpoints Used
+## 4. Microservice API Endpoints Used
 This project uses local mock API functions instead of a real remote backend server.
 
 The mock API functions are located in:
@@ -52,7 +52,7 @@ Local mock API functions:
 
 There are no remote API endpoints used in this prototype.
 
-##5. Feature Descriptions
+## 5. Feature Descriptions
 Feature 1: Smart Booking with Map Selection
 The booking page allows customers to create a taxi booking. Instead of typing pickup and destination suburbs manually, the customer can select the pickup location and destination location directly from the interactive map.
 
@@ -92,7 +92,7 @@ Admin staff can select a driver and assign that driver to an unassigned booking.
 
 The dashboard also supports unassigning bookings if needed. This gives admin staff better control over the booking workflow.
 
-##6. Testing Instructions
+## 6. Testing Instructions
 Test 1: Create a New Booking
 1. Open the application.
 2. Go to the Book tab.
@@ -149,7 +149,7 @@ Test 5: Validate Error Handling
 4. Try selecting a pickup time in the past.
 5. Confirm that the system displays an error message.
 
-##7. Limitations or Known Issues
+## 7. Limitations or Known Issues
 Booking data is stored in browser localStorage. This means the data is only stored in the current browser. If the browser storage is cleared, the saved bookings will be removed.
 
 The map selection uses latitude and longitude coordinates. It does not convert map coordinates into real street addresses. In a future version, reverse geocoding could be added to display real address names.
