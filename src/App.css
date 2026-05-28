@@ -187,12 +187,105 @@ th {
   max-width: 320px;
 }
 
+/* Route preview / map controls */
+
+.map-controls {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.active-map-button {
+  background: #0f766e;
+}
+
+.active-map-button:hover {
+  background: #115e59;
+}
+
+.secondary-button {
+  background: #64748b;
+}
+
+.secondary-button:hover {
+  background: #475569;
+}
+
+/* Leaflet map styles */
+
+.leaflet-map-box {
+  width: 100%;
+  height: 500px;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid #c8d8ef;
+  margin-top: 1rem;
+  background: #dcecff;
+}
+
+.leaflet-map {
+  width: 100%;
+  height: 100%;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Route information */
+
+.route-info {
+  margin-top: 1rem;
+}
+
+.route-select-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.route-result-box {
+  margin-top: 1rem;
+  padding: 1.2rem;
+  border-radius: 18px;
+  background: #f8fbff;
+  border: 1px solid #dce4f2;
+}
+
+.route-result-box h3 {
+  margin-top: 0;
+}
+
+/* Optional iframe map styles, safe to keep if your older RoutePreview used iframe */
+
+.iframe-map-box {
+  height: 600px;
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid #c8d8ef;
+  margin-top: 1rem;
+  background: #dcecff;
+}
+
+.iframe-map-box iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Old simulated map styles, safe to keep if another component still uses them */
+
 .map-box {
   height: 320px;
   border-radius: 24px;
   background:
-    linear-gradient(90deg, rgba(255,255,255,0.4) 1px, transparent 1px),
-    linear-gradient(rgba(255,255,255,0.4) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.4) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.4) 1px, transparent 1px),
     #dcecff;
   background-size: 40px 40px;
   position: relative;
@@ -230,13 +323,27 @@ th {
   border-radius: 999px;
 }
 
-.route-info {
-  margin-top: 1rem;
-}
+/* Responsive design */
 
 @media (max-width: 760px) {
+  .hero {
+    padding: 2rem 6%;
+  }
+
   .hero h1 {
     font-size: 2.2rem;
+  }
+
+  .tabs {
+    padding: 1rem 6%;
+  }
+
+  main {
+    padding: 1.5rem 6%;
+  }
+
+  .card {
+    padding: 1.5rem;
   }
 
   .form-grid {
@@ -247,117 +354,15 @@ th {
     flex-direction: column;
   }
 
-  
-
-.leaflet-map-box {
-  height: 600px;
-  width: 100%;
-  border-radius: 24px;
-  overflow: hidden;
-  border: 1px solid #c8d8ef;
-  margin-top: 1rem;
-  background: #dcecff;
-}
-
-.leaflet-container {
-  height: 100%;
-  width: 100%;
-}
-
-.route-result-box {
-  margin-top: 1rem;
-  padding: 1.2rem;
-  border-radius: 18px;
-  background: #f8fbff;
-  border: 1px solid #dce4f2;
-}
-
-.route-result-box h3 {
-  margin-top: 0;
-}
-
-.iframe-map-box {
-  height: 600px;
-  width: 100%;
-  border-radius: 24px;
-  overflow: hidden;
-  border: 1px solid #c8d8ef;
-  margin-top: 1rem;
-  background: #dcecff;
-}
-
-.iframe-map-box iframe {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-.route-select-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(220px, 1fr));
-  gap: 1rem;
-  margin: 1rem 0;
-}
-
-.route-result-box {
-  margin-top: 1rem;
-  padding: 1.2rem;
-  border-radius: 18px;
-  background: #f8fbff;
-  border: 1px solid #dce4f2;
-}
-
-.route-result-box h3 {
-  margin-top: 0;
-}
-
-@media (max-width: 760px) {
   .route-select-grid {
     grid-template-columns: 1fr;
+  }
+
+  .leaflet-map-box {
+    height: 420px;
   }
 
   .iframe-map-box {
     height: 420px;
   }
-}
-
-.map-controls {
-  display: flex;
-  gap: 0.8rem;
-  flex-wrap: wrap;
-  margin: 1rem 0;
-}
-
-.active-map-button {
-  background: #0f766e;
-}
-
-.secondary-button {
-  background: #64748b;
-}
-
-.leaflet-map-box {
-  width: 100%;
-  height: 500px;
-  border-radius: 24px;
-  overflow: hidden;
-  border: 1px solid #c8d8ef;
-  margin-top: 1rem;
-}
-
-.leaflet-map {
-  width: 100%;
-  height: 100%;
-}
-
-.route-info {
-  margin-top: 1rem;
-}
-
-.leaflet-container {
-  width: 100%;
-  height: 100%;
-}
-
 }
